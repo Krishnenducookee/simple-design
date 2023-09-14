@@ -12,7 +12,7 @@ return (
         </div>
 
         
-        <div className="p-20 md:overflow-y-auto relative md:pl-36 md:p-16 flex flex-col">
+        <div className="px-9 py-5 md:overflow-y-auto relative md:pl-36 md:p-16 flex flex-col">
             {children}
         </div>
 
