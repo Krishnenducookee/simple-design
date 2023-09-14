@@ -31,7 +31,7 @@ const undo=()=>{
       ></button>
       <p className="paragraph-lg paragraph-black font-semibold">
         <textarea
-          className="h-[330px] resize-none"
+          className="h-[330px] resize-none w-[250px]"
           onChange={(e) => {
             setParagraph({ newText: e.target.value, isOriginal: false });
           }} 
