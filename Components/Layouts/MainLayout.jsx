@@ -3,19 +3,24 @@ import SideBar from "./SideBar"
 
 const MainLayout=({children})=>{
 return (
-    <div className="min-h-screen w-full relative flex bg-slate-900">
-        <div className='sticky top-0 w-[20%] h-min ' >
+    <div className="min-h-screen w-full relative flex bg-slate-900 flex-col md:flex-row">
+        <div className='sticky top-0 h-min md:w-60' >
             <SideBar/>
         </div>
-        <div className='sticky top-0 h-min ' >
+        <div className='hidden md:block sticky top-0 h-min' >
         <Divider/>
         </div>
-        <div className="overflow-y-auto w-[80%] relative pl-36 p-16 flex flex-col">
+
+        
+        <div className="p-20 md:overflow-y-auto relative md:pl-36 md:p-16 flex flex-col">
             {children}
         </div>
 
     </div>
+
+
 )
+   
 }
 
 export default MainLayout
